@@ -776,6 +776,7 @@ ul {
 
 .auth_p {
   margin: 2rem 0rem;
+  font-size: 2rem;
 }
 
 .form_group {
@@ -866,4 +867,186 @@ ul {
 .team_name {
   font-size: 3.2rem;
   margin-bottom: 2rem;
+}
+
+/* Check Out Styles */
+.co_list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bold_list_page {
+  font-weight: 700;
+}
+
+.co_list_link_page,
+.list_span {
+  color: var(--color-dark-2);
+}
+
+.co_title {
+  color: var(--color-dark-1);
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.875rem; /* 83.333% */
+  letter-spacing: 0.09rem;
+  margin-bottom: 5rem;
+}
+
+.co_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.co_input {
+  width: 100%;
+  position: relative;
+}
+
+.label_form_co {
+  display: block;
+}
+
+.co_span {
+  color: #df1a1a;
+}
+
+.input_co_form {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem 0rem;
+  box-sizing: border-box;
+  border: 0.3px solid var(--color-dark-2);
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.co_form {
+  margin-bottom: 4rem;
+}
+
+/* Bill payment */
+.bill_form_buy {
+  width: 100%;
+  margin: 4rem 5rem;
+}
+.img_price_bill {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.price_title_items {
+  width: 100%;
+}
+
+.payment_fees {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.line_hr {
+  margin: 1rem 0rem;
+}
+
+.payment_choice_bill {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.radio_bank_choice {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
+}
+
+.radio_bank_choice1 {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
+}
+
+.payment_option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.label_bank_radio {
+  font-size: 1.8rem;
+  color: var(--color-dark-1);
+}
+
+.logo_payment {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.coupon_btn_section {
+  display: flex;
+  align-items: center;
+}
+
+.input_coupon {
+  flex: 5;
+  padding: 2rem;
+  border: 1px solid var(--color-dark-1);
+  border-radius: 4px 0 0 4px;
+  gap: 2;
+  font-size: 2rem;
+}
+
+.btn_coupon {
+  background-color: #fd1d1d;
+  color: var(--color-white-1);
+  padding: 2rem;
+  border: 1px solid #fd1d1d;
+  border-radius: 0 0.3rem 0.3rem 0;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.btn_coupon:hover {
+  background-color: #c71818;
+  border: 1px solid #c71818;
+  transition: all 0.3s ease;
+}
+
+.input_coupon::placeholder {
+  font-size: 2rem;
+}
+
+.btn_order {
+  width: 20rem;
+  height: 4rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: #fd1d1d;
+  border: none !important;
+  color: var(--color-white-1);
+}
+
+.btn_order:hover {
+  background-color: #c71818;
+  transition: all 0.3s ease;
 }
