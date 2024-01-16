@@ -607,24 +607,25 @@ ul {
 
 /* Mobile Nav */
 .mobile_nav {
-  background-color: var(--color-white-1);
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  backdrop-filter: blur(2px);
   position: absolute;
-  z-index: 99;
   height: 50vh;
   width: 100%;
-  text-align: center;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
   transition: all 0.5s ease;
-  box-shadow: 0.1px 15px 30px var(--color-dark-2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
 }
 
-.mobile_nav_item {
+mobile_nav_item {
   padding: 2rem 10rem 2rem 5rem;
-  border-bottom: 1px solid var(--color-white-2);
 }
 
 .mobile_nav_item:hover {
-  background-color: #dedede;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
   border-radius: 2rem;
   transition: all 0.1s;
 }
@@ -780,6 +781,7 @@ ul {
 }
 
 .form_group {
+  position: relative;
   width: 100%;
 }
 
@@ -926,6 +928,9 @@ ul {
 
 .co_form {
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Bill payment */
@@ -1053,10 +1058,10 @@ ul {
 
 @media only screen and (max-width: 800px) {
   .co_list_link_page {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  .bold_list_page {
-    font-size: 1.5rem;
+  .title_size {
+    font-size: 0.2rem;
   }
 
   .co_container {
@@ -1110,5 +1115,110 @@ ul {
     width: 100%;
     height: 5rem;
     font-size: 1.5rem;
+  }
+}
+
+.tag_title {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.tag_title > span {
+  color: #df1a1a;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.bold_list_page {
+  margin: 3rem 0rem;
+}
+
+.manage_account {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.account_container_list {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-self: stretch;
+}
+
+.edit_profile {
+  display: flex;
+  width: 70%;
+}
+.name_form {
+  background-color: var(--color-white-1);
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+}
+.eyp {
+  color: #df1a1a;
+  font-size: 2rem;
+}
+
+.form_account {
+  display: flex;
+  flex: 5;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form_group {
+  margin: 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_apply_cancel {
+  align-items: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cancel_btn {
+  margin-right: 1rem;
+}
+
+.apply_changes {
+  background-color: #fd1d1d;
+  color: var(--color-white-1);
+  padding: 1rem;
+  border: 1px solid #fd1d1d;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.apply_changes:hover {
+  background-color: #c71818;
+  border: 1px solid #c71818;
+  transition: all 0.3s ease;
+}
+
+.link_list:hover {
+  color: #df1a1a;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .account_container_list {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .edit_profile {
+    width: 100%;
+  }
+  .bold_list_page {
+    font-size: 2rem;
+  }
+  .label_form_co {
+    text-align: left;
   }
 }
