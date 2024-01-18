@@ -617,12 +617,12 @@ ul {
   text-align: center;
   backdrop-filter: blur(2px);
   position: absolute;
-  height: 50vh;
   width: 100%;
   border-radius: 0 0 20px 20px;
   transition: all 0.5s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 99;
+  font-size: 2rem;
 }
 
 mobile_nav_item {
@@ -632,7 +632,6 @@ mobile_nav_item {
 .mobile_nav_item:hover {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
-  border-radius: 2rem;
   transition: all 0.1s;
 }
 
