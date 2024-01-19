@@ -869,11 +869,33 @@ mobile_nav_item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
+  justify-items: center;
 }
 
 .team_name {
-  font-size: 3.2rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.team_img {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.img_fauzan {
+  display: grid;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  justify-items: center;
+  grid-column-start: 5;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 2;
 }
 
 /* Check Out Styles */
