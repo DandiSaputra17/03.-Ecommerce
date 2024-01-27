@@ -907,6 +907,7 @@ mobile_nav_item {
 
 .bold_list_page {
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .co_list_link_page,
@@ -1242,10 +1243,32 @@ mobile_nav_item {
   .edit_profile {
     width: 100%;
   }
+  .bold_list_page1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
   .bold_list_page {
     font-size: 2rem;
+    text-align: center;
   }
   .label_form_co {
     text-align: left;
   }
+  .list_account {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .manage_account {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact_section {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
