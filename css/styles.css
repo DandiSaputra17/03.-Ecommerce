@@ -1233,6 +1233,10 @@ mobile_nav_item {
   color: #df1a1a;
   transition: all 0.3s ease;
 }
+.bold_list_page1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
 @media only screen and (max-width: 800px) {
   .account_container_list {
@@ -1245,7 +1249,7 @@ mobile_nav_item {
   }
   .bold_list_page1 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 800;
   }
   .bold_list_page {
     font-size: 2rem;
@@ -1271,4 +1275,83 @@ mobile_nav_item {
   display: flex;
   width: 100%;
   align-items: stretch;
+}
+
+.heading_found {
+  font-size: 8rem;
+  text-align: center;
+  letter-spacing: 1.5rem;
+  font-weight: 300;
+  margin: 6rem auto;
+  color: var(--color-dark-1);
+  font-style: italic;
+}
+
+.title_found {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-dark-2);
+  margin-bottom: 5rem;
+  font-weight: 300;
+}
+.btn_cen {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_found {
+  color: var(--color-dark-1);
+  background-color: #df1a1a;
+  width: 15em;
+  height: 3em;
+  font-weight: 600;
+  color: var(--color-white-1);
+  font-size: 1.4rem;
+  border: none;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.btn_found:hover {
+  background-color: #921212;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn_found:active {
+  background-color: #210707;
+}
+
+.container_card_section {
+  display: flex;
+  width: 100%;
+}
+
+.card_image_section {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image_card_row {
+  border-radius: 1rem;
+}
+
+.image_right_full {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  background-size: cover;
+  object-fit: cover;
+  scale: calc(0.2rem);
+  margin: 0 3rem;
+}
+.title_cart {
+  width: 80%;
+}
+
+.heading_top {
+  font-size: 2rem;
+  margin-left: 2rem;
 }
