@@ -24,6 +24,7 @@ html {
 body {
   font-family: var(--font-main);
   font-size: 1.6rem;
+  user-select: none;
 }
 
 a {
@@ -604,6 +605,15 @@ ul {
   }
 }
 @media only screen and (max-width: 800px) {
+  .section_title {
+    font-size: 2rem;
+  }
+  .category_icon {
+    color: var(--color-white-1);
+  }
+  #demo {
+    font-size: 1.5rem;
+  }
   .gallery {
     width: 100%;
     display: flex;
@@ -1312,6 +1322,10 @@ mobile_nav_item {
   border-radius: 0.5rem;
 }
 
+.btn_found_link {
+  color: var(--color-white-1);
+}
+
 .btn_found:hover {
   background-color: #921212;
   cursor: pointer;
@@ -1616,8 +1630,27 @@ mobile_nav_item {
 }
 
 @media only screen and (max-width: 800px) {
+  .co_list {
+    margin-bottom: 5rem;
+    margin-top: -6rem;
+  }
+  .heading_found {
+    font-size: 2.5rem;
+  }
+  .title_found {
+    font-size: 1rem;
+    margin-top: -3rem;
+    text-align: center;
+  }
   .co_form {
     margin-bottom: -7rem;
+  }
+  .btn_found {
+    width: 9em;
+    height: 3em;
+  }
+  .btn_found_link {
+    font-size: 1rem;
   }
   .co_list_link_page {
     font-size: 1.5rem;
@@ -1668,4 +1701,35 @@ mobile_nav_item {
     justify-content: center;
     margin: 3rem auto;
   }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  z-index: 99999;
+}
+
+.text_cart {
+  white-space: nowrap;
+  color: var();
+  font-size: 1.5rem;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* z-index: 9999999; */
+}
+
+.container_cart:hover.overlay {
+  height: 20%;
+  /* overflow: visible; */
 }
